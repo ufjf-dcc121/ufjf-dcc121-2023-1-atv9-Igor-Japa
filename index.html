@@ -39,6 +39,8 @@
             console.log(nomeCompleto);
             const span = document.querySelector("p");
             span.innerHTML = `Olá <span>${nomeCompleto}</span>!`;
+            form.reset();
+            form.nome.focus();
         }
    </script>
 </body>
