@@ -19,8 +19,14 @@
             <input type="reset" />
         </form>
     </main>
-    <footer>
+   <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", aoEnviar);
 
-    </footer>
+        function aoEnviar(evento){
+            evento.preventDefault();
+            console.log("Hello, form!");
+        }
+   </script>
 </body>
 </html>
